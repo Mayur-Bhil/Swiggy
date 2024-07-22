@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #FCFCFC;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    filter: blur(0.1px);
+}
+.logo{
+    height:90px;
+    width: 150px;
+    object-fit: cover;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.nav h4{
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+   
+}
+h4{
+    text-decoration: none;
+}
+.nav button{
+    padding: 4px;
+}
+.body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: blue; */
+    
+}
+.body .res-container{
+    /* margin-top: 50px; */
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.rescard{
+    height: 300px;
+    width: 273px;
+    transform: scale(2px);
+transition: all ease-in 0.1s;
+
+
+}
+.img-container{
+        width: 279px;
+        height:182px;
+        /* background-color: yellow; */
+    
+}
+.id{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.rescard:hover{
+    transform: scale(0.90);
+    cursor: pointer;
+   
+
+}
+.text{
+    width:100%;
+}
+.text h3{
+font-size: 17px;
+text-decoration:none;
+}
+.text h6{
+    font-size: 13px;
+    font-weight: 200;
+   color: #b4aaad;
+}
+.text a{
+    list-style-type: none;
+}
+.searchbar{
+    font-size: 20px;
+   outline-color: royalblue;
+   font-family: Gilroy;
+   margin-right: 20px;
+   border-radius: 4px;
+   padding: 5px;
+   
+}
+.resfil{
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    /* background-color: red; */
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+.search{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+
+
+}
+.search .filter{
+    font-size: 20px;
+    /* background-color:yellow; */
+    /* overflow: hidden; */
+    border-radius: 5px;
+    cursor:pointer;
+    padding: 5px;
+
+}
+.shimmer{
+   margin-top: 60px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.shimmer .cards {
+    width: 279px;
+        height:182px;
+        border-radius: 20px;
+    background-color: rgb(217, 223, 227);
+    margin-bottom: 30px;
+
+
+}
+.footer{
+    position: relative;
+    bottom: 30;
+    text-align: center ;
+    
+   
+}
+.footer h5{
+    margin-top: 1.5vw;
+    font-family: Gilroy;
+    font-weight: 500;
+}
+.footer h5:hover{
+    filter: blur(1px);
+}
+.error{
+
+    position: relative;
+}
+.error img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px; 
+    
+   
+}

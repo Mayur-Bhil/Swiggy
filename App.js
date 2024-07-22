@@ -1,0 +1,59 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Header from './components/Header';
+import Body from './components/Body';
+import  Footer  from './components/Footer';
+import About from './components/About';
+import Contact from './components/contact';
+import  {Error}  from './components/Error';
+import { createBrowserRouter,RouterProvider,Outlet } from 'react-router-dom';
+import Resmenu from './components/Resmenu';
+
+
+
+
+
+const Applayout = () => {
+        return(
+           <div className='app'>
+            <Header/>
+            <Outlet/>
+            </div>
+    )
+}
+
+const Approuter = createBrowserRouter([
+        {
+                path : "/",
+                element :<Applayout/>,
+                children : [
+                        {
+                                path : "/",
+                                element :<Body/>,
+                        },
+                        {
+                                path : "/about",
+                                element : <About/>
+                        },
+                        {
+                                path : "/contact",
+                                element : <Contact/>
+                        },
+                        {
+                                path : "/footer",
+                                element : <Footer/>
+                        },
+                        {
+                                path : "/resturants/:resid",
+                                element : <Resmenu/>
+                        },
+                ],
+                errorElement : <Error/>
+        },
+      
+])
+
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router = {Approuter}/>)
