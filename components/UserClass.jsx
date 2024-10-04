@@ -11,7 +11,7 @@ class UserClass extends React.Component{
             this.state = {
                     userInfo :{
                         name : "Dummy Name",
-                        location : "Brahmahand",
+                        location : "Earth",
                         avatar_url: "https.in",
                         bio : "Weber",
                     }
@@ -26,13 +26,13 @@ class UserClass extends React.Component{
            this.setState({
                 userInfo : json,
            })
-           console.log(json);
+        //    console.log(json);
         }
         componentDidUpdate(){
-            console.log("componenet update called");
+            // console.log("componenet update called");
         }
         componentWillUnmount(){
-            console.log("Wll COmponent Called");
+            // console.log("Wll COmponent Called");
         }
         
     render(){

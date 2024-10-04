@@ -16,12 +16,12 @@ const Cart = () =>{
        <div className="cart">
         <h1>Cart</h1>
         <button className="btnn"onClick={handleClearCart}>clear cart</button>
-            <div className="">
-        {cartItems.length === 0 && <h1>Your Cart is Empty Add Items In cart</h1>}
+            <div>
+                {cartItems.length === 0 && <h1>Your Cart is Empty Add Items In cart</h1>}
                 <ItemsList items={cartItems}/>
             </div>
        </div>
-    )
-}
+    );
+};
 
 export default Cart;

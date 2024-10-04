@@ -12,7 +12,7 @@ const useResmenu = (resid) => {
         const data  = await fetch(MENU_API+resid);
         const json = await data.json();
         setresInfo(json.data);
-        console.log(json.data);
+        // console.log(json.data);
     }
 
     return resInfo;

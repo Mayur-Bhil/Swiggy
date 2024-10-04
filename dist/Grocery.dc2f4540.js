@@ -1,0 +1,2 @@
+var e=globalThis.parcelRequire29b1;(0,e.register)("hEFAb",function(r,i){Object.defineProperty(r.exports,"__esModule",{value:!0,configurable:!0}),Object.defineProperty(r.exports,"default",{get:()=>t,set:void 0,enumerable:!0,configurable:!0});var o=e("ayMG0"),t=()=>(0,o.jsx)("div",{className:"div",children:(0,o.jsx)("h1",{children:"Hey Welcome to our Store Buy Your Requirenments From Here With Discounted Price"})})});
+//# sourceMappingURL=Grocery.dc2f4540.js.map

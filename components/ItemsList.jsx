@@ -3,10 +3,10 @@ import { IMG_URL } from "../utils/constans";
 import { addItems } from "../utils/cartSice";
 
 const ItemsList = ({items,dummy}) => {
-    console.log(items);
-    console.log(dummy);
+    // console.log(items);
+    // console.log(dummy);
 
-    const dispatch = useDispatch();
+const dispatch = useDispatch();
 const handleAddItems = (item)=>{
     //dispatch an action
     dispatch(addItems(item))

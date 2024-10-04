@@ -13,11 +13,12 @@ import { useSelector } from "react-redux";
     useEffect(()=>{
         // console.log("UseEffest called");
     },[btnFromReact])
+    
     const {logedInUser} = useContext(UserContext);
-    console.log(logedInUser);
+    // console.log(logedInUser);
  // subscribing the store using selector
     const cartItems = useSelector((store)=> store.cart.items)
-    console.log(cartItems);
+    // console.log(cartItems);
     const OnlineStatus = useOnlineStatus();
     return (
         <header className="header bg-red-50">
@@ -36,7 +37,7 @@ import { useSelector } from "react-redux";
                         <h4>{logedInUser}</h4>
                         <button className="Login" onClick={() =>{
                             btnFromReact === "Login" ? setbtnFromReact("Logout"):setbtnFromReact("Login");
-                           console.log(btnFromReact);
+                        //    console.log(btnFromReact);
                         }}
                         >   
                             {btnFromReact}
